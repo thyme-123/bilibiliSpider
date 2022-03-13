@@ -25,8 +25,8 @@ if not os.path.isdir(download):
     os.mkdir(download)
 #缓存路径
 updata= os.path.abspath(".") + os.sep + "project" + os.sep + "item" + os.sep + "data"
-#if not os.path.isdir(updata):
-    #os.mkdir(updata)
+if not os.path.isdir(updata):
+    os.mkdir(updata)
 #一键投币投币数(0,1,2)
 coin=2
 #投币同时点赞(点赞1,不点赞0)
